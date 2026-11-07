@@ -1,0 +1,12 @@
+{
+  "name": "Shri Vasavi Stores and Essence Mart",
+  "short_name": "Vasavi Stores",
+  "description": "See bakery supplies and daily essentials at your local shop.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f5",
+  "theme_color": "#155b43",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

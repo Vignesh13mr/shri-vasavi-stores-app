@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155b43"><meta name="description" content="Cake boxes, sweet boxes, baking essences and daily essentials at Shri Vasavi Stores and Essence Mart."><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>Shri Vasavi Stores and Essence Mart</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top"><span class="mark">✳</span><span>Shri Vasavi Stores<br><small>and Essence Mart</small></span></a><button class="owner-open" id="owner-open">Manager sign in</button></header>
+  <main id="top">
+    <section class="hero"><div><p class="eyebrow">YOUR LOCAL STORE</p><h1>Everything bakers need.<br>And more for every day.</h1><p>Browse cake boxes, sweet boxes, essences and everyday essentials.</p><a class="hero-link" href="#catalog">Explore the shelves <span>↓</span></a></div><div class="hero-sticker" aria-hidden="true"><span>🎂</span><span>🧴</span><span>📦</span><span>🧼</span></div></section>
+    <section class="catalog" id="catalog"><div class="heading"><div><p class="eyebrow">THE SHOP</p><h2>Today’s selection</h2></div><span id="item-count">0 items</span></div>
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search products" autocomplete="off"></label>
+      <div class="filters" id="filters"></div><div class="grid" id="products"></div><div class="empty hidden" id="empty">No matching products. Try another search.</div>
+      <p class="footnote" id="catalog-note">Sample catalog for preview. Ask the shop to confirm current stock and prices.</p>
+    </section>
+    <section class="about"><div><p class="eyebrow">COME SAY HELLO</p><h2>Shri Vasavi Stores<br>and Essence Mart</h2></div><p>Baking and bakery packaging supplies, plus daily essentials, all in one neighbourhood shop.</p></section>
+  </main>
+  <footer>Made for your neighbourhood · <span id="year"></span></footer>
+  <dialog id="manager"><section id="manager-login"><div class="dialog-head"><div><p class="eyebrow">MANAGER ACCESS</p><h2>Manager sign in</h2></div><button type="button" id="close-manager" class="close">×</button></div><p class="manager-note">Use the manager email and password created in Supabase.</p><form id="login-form"><label class="pin-label">Email<input id="login-email" type="email" autocomplete="username" required></label><label class="pin-label">Password<input id="login-password" type="password" autocomplete="current-password" required></label><button class="save" type="submit">Sign in</button><p class="form-message" id="login-message" aria-live="polite"></p></form></section><form id="manager-form" class="hidden"><div class="dialog-head"><div><p class="eyebrow">STORE MANAGER</p><h2>Update the shelf</h2></div><button type="button" id="manager-signout" class="signout">Sign out</button></div><p class="manager-note">Updates are shared with customers when saved.</p><input id="edit-id" type="hidden"><div class="form-grid"><label>Product name<input id="name" required maxlength="60" placeholder="e.g. Cake box or vanilla essence"></label><label>Category<select id="category"><option>Bakery supplies</option><option>Tea and drink powders</option><option>Groceries</option><option>Kitchenware</option><option>Personal care</option><option>Household</option><option>Snacks</option></select></label><label>Price (₹)<input id="price" type="number" min="1" step="0.01" required></label><label>Quantity<input id="quantity" type="number" min="0" step="1" required></label></div><button class="save" id="save-product" type="submit">Add product</button><button class="reset" id="cancel-edit" type="button" hidden>Cancel edit</button><h3>Current products</h3><div id="manage-list" class="manage-list"></div></form></dialog>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
+  <script src="app.js"></script>
+</body></html>
